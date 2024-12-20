@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="css_logo.gif" width="40px" height="40px" alt="logo">
+      <h1>Css Topic</h1>
+    </header>
+    <main>
+      <article>
+        <section id="box_model">
+          <h1> <img src="surprise.gif" width="40px" height="40px" alt=""> The Box model</h1>
+          <p>
+            Everything in CSS has a box around it, and understanding these boxes
+            is key to being able to create more complex layouts with CSS, or to
+            align items with other items. In this lesson, we will take a look at
+            the CSS Box model. You'll get an understanding of how it works and the
+            terminology that relates to it.
+          </p>
+          <table>
+            
+              <tr>
+                <th>Prerequisites:</th>
+                <td>HTML basics (study Basic HTML syntax)</td>
+               
+              </tr>
+          
+              <tr>
+                <th>Learning outcomes:</th>
+                <td>
+                  <ul>
+                    <li>Block and inline elements</li>
+                    <li>
+                      The different boxes that make up an element and how to style
+                      them — content, margin, border, padding.
+                    </li>
+                    <li>
+                      The alternative box model (accessed via
+                      <span>box-sizing: border-box</span>) and how it differs from
+                      the regular box model
+                    </li>
+                    <li>Margin collapsing.</li>
+                    <li>
+                      Basic display values and how they affect box behavior —
+                      <span>block</span>, <span>inline</span> ,
+                      <span>inline-block</span>, <span>none</span> .
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+           
+          </table>
+        </section>
+        
+
+      <section id="block_and_inline">
+        <h2><a href="block_and_inline">Block and inline boxes</a></h2>
+       <p>In CSS we have several types of boxes that generally fit into the categories of block boxes and inline boxes. The type refers to how the box behaves in terms of page flow and in relation to other boxes on the page. Boxes have an inner display type and an outer display type. <br>
+
+        In general, you can set various values for the display type using the display property, which can have various values. <br>
+        If a box has a display value of block, then: <br>
+        <ul>
+          <li>The box will break onto a new line.</li>
+          <li>The width and height properties are respected</li>
+          <li>Padding, margin and border will cause other elements to be pushed away from the box.</li>
+          <li>If width is not specified, the box will extend in the inline direction to fill the space available in its container. In most cases, the box will become as wide as its container, filling up 100% of the space available.</li>
+        </ul>
+        Some HTML elements, such as    use inline as their outer display type by default.
+<br>
+          Block and inline layout is the default way things behave on the web. By default and without any other instruction, the elements inside a box are also laid out in normal flow and behave as block or inline boxes.
+      </p>
+
+
+
+
+      </section>
+      <section id ='inner_and_outer_display'>
+        <h2><a href="inner_and_outer_display"> Inner and outer display types</a></h2>
+        block and inline display values are said to be outer display types — they affect how the box is laid out in relation to other boxes around it. Boxes also have an inner display type, which dictates how elements inside that box are laid out.
+<br>
+        You can change the inner display type by setting an inner display value, for example display: flex;. The element will still use the outer display type block but this changes the inner display type to flex. Any direct children of this box will become flex items and behave according to the Flexbox specification.
+        <br>
+        When you move on to learn about CSS Layout in more detail, you will encounter flex, and various other inner values that your boxes can have, for example grid.
+        <br>
+        Don't worry too much about the inner and outer terminology for now; this is what is happening internally, and we mentioned it here in case you come across it elsewhere. Generally, you will just deal with single display values, and won't need to think about it much.
+      </section>
+       <section id="examples_of_different_display">
+         <h2><a href="#examples_of_different_display">Examples of different display</a></h2>
+         <p>The example below has three different HTML elements, all of which have an outer display type of block.
+<br>
+          A paragraph with a border added in CSS. The browser renders this as a block box. The paragraph starts on a new line and extends the entire available width.
+          <br>
+          A list, which is laid out using display: flex. This establishes flex layout for the children of the container, which are flex items. The list itself is a block box and — like the paragraph — expands to the full container width and breaks onto a new line.
+          <br>
+          A block-level paragraph, inside which are two  elements. These elements would normally be inline, however, one of the elements has a class of "block" which gets set to display: block.</p>
+       </section>
+
+      </article>
+      <aside>
+        <p>In This Article</p>
+        <ul>
+          <li><a href="#box_model">The Box Model</a></li>
+          <li><a href="#block_and_inline">Block and inline boxes</a></li>
+          <li><a href="#inner_and_outer_display"> Inner and outer display types</a></li>
+          <li><a href="#examples_of_different_display">Examples of different display</a></li>
+        </ul>
+        
+        
+      </aside>
+    </main>
+    <footer><p>footer content</p></footer>
+  </body>
+</html>
