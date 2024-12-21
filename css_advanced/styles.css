@@ -1,0 +1,252 @@
+body {
+    background-image: url();
+    height: 100vh; /* 100% of the viewport height */
+    margin: 0; /* Remove default margins */
+    background-image: url(./images/Object.png); /* Replace 'your-image.jpg' with your image path */
+    background-size:cover; /* Cover the entire background */
+    background-repeat: no-repeat;   
+    font-family:' Source Sans Pro';
+    
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px ;
+    width: 1103px;
+
+}
+nav img{
+    width: 167px;
+    height: 30px;
+}
+nav ul {
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+     
+}
+nav ul li a{
+    margin: 0 10px;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 700px;
+    color: white;
+    text-decoration: none;
+}
+.home-text {
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start;
+     
+}
+.home-text h1{
+    text-align: center;
+    font-size: 120px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0;
+}
+
+.span-div{
+     display:flex;
+     justify-content: space-evenly;
+     margin: 0 400px;
+     color: white;
+}
+
+.reg-button {
+    display: flex;
+    justify-content: center;
+}
+.home-text button {
+    border-radius: 22px;
+    background-color: #c271ff;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px ;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    box-shadow: 1px black ;
+}
+
+.learn h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    
+     
+}
+
+.learn h2 span {
+    color: #c271ff;
+}
+
+.pros{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1009px;
+    height: 237px;
+    margin-left: 217px;
+    color: white;
+    margin-top: 100px;
+}
+
+ 
+.pros div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+
+.quote{
+    display: flex;
+    justify-content: center;
+    background-color: #c271ff;
+    align-items: center;
+    width: 100%;
+    height: 392px;
+    color: white;
+     
+    
+}
+
+.quote div{
+    
+    margin: 20px;
+}
+
+.video-section{
+display: flex;
+flex-direction:column;
+padding : 80px;
+ 
+ 
+}
+
+.video-section h2{
+    text-align: center;
+}
+.video-section h2 span{
+    color:#c271ff;
+}
+
+.videos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+
+}
+ 
+
+.videos div div {
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+    color: #c271ff;
+}
+.videos div div img {
+    width: 30px;
+    height: 30px
+}
+
+.min {
+    float: right;
+    color: #c271ff;
+}
+
+
+.membership{
+    width: 100%;
+    height: 500px;
+    background-color: #071629;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+   
+}
+
+.membership-options{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+     
+}
+
+.membership-options div {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership button {
+    border-radius: 22px;
+    background-color: #c271ff;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px ;
+     
+    box-shadow: 1px black ;
+}
+
+
+.FAQ h2{
+    text-align: center;
+  
+}
+
+.FAQ div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 80px ;
+    
+} 
+
+.FAQ div div {
+    display: flex;
+    flex-direction: column;
+     
+}
+
+footer {
+    display: flex;
+    flex-direction: column; 
+    justify-content: end;
+    width: 100%;
+    height: 250px;
+    background-color: #071629;
+    color: white;
+    text-align: center;
+    
+}
+
+
+.footer-c {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+
+.footer-c div {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 400px;
+}
+
+.footer-c div i{
+    margin-left: 30px;
+}
