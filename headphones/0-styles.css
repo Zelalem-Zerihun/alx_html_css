@@ -2,18 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Source Sans Pro";
 }
 
-body {
+ 
+
+.home {
+   
   font-family: sans-serif;
   background: url(images/headphones_hero_1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.container {
-  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -66,21 +70,64 @@ ul {
   list-style: none;
   display: flex;
 }
-
-li {
-  margin-left: 20px;
-}
-
-a {
-    font-size: 12px;
-    font-weight: bold;
+ 
+a{
+  font-size: 12px;
+  color: white;
   text-decoration: none;
-  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  width: 70px;
+}
+a:hover {
+  color: #ff6565;
 }
 
 
+.home-description{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: 266px 0 ;
+    padding: 0 9px;
+    
+}
+
+.home-description p {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom:  100px ;
+}
 
 
+.home-description h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.home-description h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.home-description button{
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #ff6565;
+    color: white;
+    padding: 13px 31px;
+    margin: 40px 0 65px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.home-description button:hover{
+    opacity: 0.9;
+}
 
  @media screen and (min-width: 768px) {
     header{
@@ -95,20 +142,23 @@ a {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        max-height: 30px;
+        max-height: 50px;
         align-items: center;
-        margin-top: 29px;
-        
-        width: 300px;
-        
+        margin-top: 29px; 
+              
     }
+
+   
     .logo i{
         display: none;
     }
     .logo{
-        margin-left: 66px;
+        margin-left: 0px;
         
     }  
+   .home-description{
+    width: 637px;
+   } 
 }
 
 
